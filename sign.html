@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="sign.css" />
 </head>
 <body>
     <div class="container">
-        <h2>Login</h2>
-        <form id="loginForm">
+        <h2>Signup</h2>
+        <form id="signupForm">
             <label for="username">Name:</label>
             <input type="text" id="username" required />
-            
-            <label for="RegNo">RegNo:</label>
-            <input type="text" id="RegNo" required />
 
             <label for="email">Email:</label>
             <input type="email" id="email" required />
@@ -25,14 +22,13 @@
                 <button type="button" id="togglePassword">Show</button>
             </div>
 
-            <div class="forgot-password">
-                <a href="#">Forgotten password?</a>
-            </div>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required />
 
-            <button type="submit">Login</button>
+            <button type="submit">Signup</button>
         </form>
-        <p>Don't have an account? <a href="signup.html">Signup here</a></p>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
     </div>
-    <script src="login.js"></script>
+    <script src="sign.js"></script>
 </body>
 </html>
